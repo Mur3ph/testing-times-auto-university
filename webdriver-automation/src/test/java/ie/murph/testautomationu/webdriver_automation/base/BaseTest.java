@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import ie.murph.testautomationu.webdriver_automation.util.XPath;
+
 public class BaseTest {
 	
 	private WebDriver driver;
@@ -62,19 +64,17 @@ public class BaseTest {
 	}
 
 	private void clickShiftingContentLink() {
-//		WebElement shiftingContentLink = driver.findElement(By.xpath("//li/a[contains(translate(text(), 'shifting content', 'Shifting Content'))]")); // Case Sensitive use translate
-//		WebElement shiftingContentLink = driver.findElement(By.xpath("//li/a[contains(text(), 'Shifting Content')]"));
-		WebElement shiftingContentLink = driver.findElement(By.xpath("//li/a[@href='/shifting_content']"));
+		WebElement shiftingContentLink = driver.findElement(By.xpath(XPath.SHIFTING_CONTENT_ANCHOR_BY_HREF.toString()));
 		shiftingContentLink.click();
 	}
 	
 	private void clickMenuElementLink() {
-		WebElement menuElementLink = driver.findElement(By.xpath("//a[@href='/shifting_content/menu']"));
+		WebElement menuElementLink = driver.findElement(By.xpath(XPath.MENU_ELEMENT_ANCHOR.toString()));
 		menuElementLink.click();
 	}
 	
 	private void countNumberOfMenuButtons() {
-		listOfWebElements = driver.findElements(By.xpath("//ul/li/a"));
+		listOfWebElements = driver.findElements(By.xpath(XPath.LIST_OF_ANCHOR_TAGS_ONLY_IN_MENU.toString()));
 		System.out.println("Number of Anchor tags, only on Menu buttons: " + listOfWebElements.size());
 	}
 
