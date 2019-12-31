@@ -18,7 +18,7 @@ public class BaseTest {
 		listOfWebElements = new ArrayList<WebElement>();
 	}
 	
-	public void setUp() {
+	public void setUp() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/");
@@ -29,7 +29,9 @@ public class BaseTest {
 //		System.out.println(driver.getTitle());
 		
 		clickShiftingContentLink();
+		clickMenuElementLink();
 		
+		Thread.sleep(3000);
 		driver.quit();
 	}
 	
@@ -66,14 +68,16 @@ public class BaseTest {
 	}
 	
 	private void clickMenuElementLink() {
-		
+		WebElement menuElementLink = driver.findElement(By.xpath("//a[@href='/shifting_content/menu']"));
+		menuElementLink.click();
 	}
 	
 	private void countNumberOfMenuButtons() {
-		
+//		listOfWebElements = driver.findElements(By.xpath("//ul/li/a"));
+//		System.out.println("Number of Anchor tags: " + listOfWebElements.size());
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		BaseTest baseTest = new BaseTest();
 		baseTest.setUp();
 	}
