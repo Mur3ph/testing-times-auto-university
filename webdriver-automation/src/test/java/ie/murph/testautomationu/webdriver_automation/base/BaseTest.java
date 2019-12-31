@@ -7,9 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import ie.murph.testautomationu.webdriver_automation.util.XPath;
 
 public class BaseTest {
 	
@@ -21,21 +18,19 @@ public class BaseTest {
 	}
 	
 	public void setUp() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("https://the-internet.herokuapp.com/");
+//		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+//		driver = new ChromeDriverTest().getChromeDriver();
+//		driver.get("https://the-internet.herokuapp.com/");
 		
 //		setBrowserSize();
 //		searchingForMulipleElements();
 //		searchingForAnElement();
 //		System.out.println(driver.getTitle());
 		
-		clickShiftingContentLink();
-		clickMenuElementLink();
-		countNumberOfMenuButtons();
+		new NavigationTest().setup();
 		
-		Thread.sleep(3000);
-		driver.quit();
+//		Thread.sleep(3000);
+//		driver.quit();
 	}
 	
 	public void setBrowserSize() {
@@ -57,30 +52,9 @@ public class BaseTest {
 //		noSuchElementException.click();
 	}
 	
-	public void extraExercise() {
-		clickShiftingContentLink();
-		clickMenuElementLink();
-		countNumberOfMenuButtons();
-	}
-
-	private void clickShiftingContentLink() {
-		WebElement shiftingContentLink = driver.findElement(By.xpath(XPath.SHIFTING_CONTENT_ANCHOR_BY_HREF.toString()));
-		shiftingContentLink.click();
-	}
-	
-	private void clickMenuElementLink() {
-		WebElement menuElementLink = driver.findElement(By.xpath(XPath.MENU_ELEMENT_ANCHOR.toString()));
-		menuElementLink.click();
-	}
-	
-	private void countNumberOfMenuButtons() {
-		listOfWebElements = driver.findElements(By.xpath(XPath.LIST_OF_ANCHOR_TAGS_ONLY_IN_MENU.toString()));
-		System.out.println("Number of Anchor tags, only on Menu buttons: " + listOfWebElements.size());
-	}
-
 	public static void main(String[] args) throws InterruptedException {
 		BaseTest baseTest = new BaseTest();
 		baseTest.setUp();
 	}
-
+	
 }
