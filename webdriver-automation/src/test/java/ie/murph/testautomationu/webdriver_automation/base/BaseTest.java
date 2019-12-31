@@ -30,6 +30,7 @@ public class BaseTest {
 		
 		clickShiftingContentLink();
 		clickMenuElementLink();
+		countNumberOfMenuButtons();
 		
 		Thread.sleep(3000);
 		driver.quit();
@@ -73,8 +74,8 @@ public class BaseTest {
 	}
 	
 	private void countNumberOfMenuButtons() {
-//		listOfWebElements = driver.findElements(By.xpath("//ul/li/a"));
-//		System.out.println("Number of Anchor tags: " + listOfWebElements.size());
+		listOfWebElements = driver.findElements(By.xpath("//ul/li/a"));
+		System.out.println("Number of Anchor tags, only on Menu buttons: " + listOfWebElements.size());
 	}
 
 	public static void main(String[] args) throws InterruptedException {
