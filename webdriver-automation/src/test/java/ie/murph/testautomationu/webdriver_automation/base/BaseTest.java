@@ -23,28 +23,29 @@ public class BaseTest {
 		driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/");
 		
-//		setBrowserSize(driver);
+//		setBrowserSize();
+//		searchingForMulipleElements();
+//		searchingForAnElement();
+//		System.out.println(driver.getTitle());
 		
-		searchingForMulipleElements();
-		searchingForAnElement();
+		clickShiftingContentLink();
 		
-		System.out.println(driver.getTitle());
 		driver.quit();
 	}
 	
-	public void setBrowserSize(WebDriver driver) {
+	public void setBrowserSize() {
 //		Browser sizes under test
 		driver.manage().window().fullscreen();
 		driver.manage().window().maximize();
 		driver.manage().window().setSize(new Dimension(375, 812)); // Mobile Devices new Dimension(width, height))
 	}
 	
-	private void searchingForMulipleElements() {
+	public void searchingForMulipleElements() {
 		listOfWebElements = driver.findElements(By.tagName("a"));
 		System.out.println("Number of Anchor tags: " + listOfWebElements.size());
 	}
 
-	private void searchingForAnElement() {
+	public void searchingForAnElement() {
 		WebElement tagNameInputs = driver.findElement(By.linkText("Inputs"));
 		tagNameInputs.click();
 //		WebElement noSuchElementException = driver.findElement(By.tagName("Pauly Murphy"));
@@ -58,7 +59,10 @@ public class BaseTest {
 	}
 
 	private void clickShiftingContentLink() {
-		
+//		WebElement shiftingContentLink = driver.findElement(By.xpath("//li/a[contains(translate(text(), 'shifting content', 'Shifting Content'))]")); // Case Sensitive use translate
+//		WebElement shiftingContentLink = driver.findElement(By.xpath("//li/a[contains(text(), 'Shifting Content')]"));
+		WebElement shiftingContentLink = driver.findElement(By.xpath("//li/a[@href='/shifting_content']"));
+		shiftingContentLink.click();
 	}
 	
 	private void clickMenuElementLink() {
