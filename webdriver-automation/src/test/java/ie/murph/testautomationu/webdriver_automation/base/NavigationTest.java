@@ -28,15 +28,21 @@ public class NavigationTest {
 	private void clickShiftingContentLink() {
 		LOGGER.info("++clickShiftingContentLink()");
 		WebElement shiftingContentLink = driver.findElement(By.xpath(XPath.SHIFTING_CONTENT_ANCHOR_BY_HREF.toString()));
-		shiftingContentLink.click();
+		clickButton(shiftingContentLink);
 		LOGGER.info("--clickShiftingContentLink()");
 	}
 	
 	private void clickMenuElementLink() {
 		LOGGER.info("++clickMenuElementLink()");
 		WebElement menuElementLink = driver.findElement(By.xpath(XPath.MENU_ELEMENT_ANCHOR.toString()));
-		menuElementLink.click();
+		clickButton(menuElementLink);
 		LOGGER.info("--clickMenuElementLink()");
+	}
+	
+	private void clickButton(WebElement webElement) {
+		LOGGER.info("++clickButton( " + webElement + " )");
+		webElement.click();
+		LOGGER.info("--clickButton( " + webElement + " )");
 	}
 	
 	private void countNumberOfMenuButtons() {
