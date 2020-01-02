@@ -7,7 +7,7 @@ public enum XPath
 	SHIFTING_CONTENT_ANCHOR_BY_HREF("//li/a[@href='/shifting_content']"),
 	MENU_ELEMENT_ANCHOR("//a[@href='/shifting_content/menu']"),
 	LIST_OF_ANCHOR_TAGS_ONLY_IN_MENU("//ul/li/a"),
-	STACK_TRACE("");
+	HOME_PAGE_FORM_AUTHENTICATION("//li/a[@href='/login']");
 	
 	private final String text;
 

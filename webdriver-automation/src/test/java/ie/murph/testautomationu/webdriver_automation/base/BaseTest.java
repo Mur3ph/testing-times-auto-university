@@ -9,6 +9,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import ie.murph.testautomationu.webdriver_automation.driver.ChromeDriverTest;
 import ie.murph.testautomationu.webdriver_automation.util.LoggingUtil;
 
 public class BaseTest {
