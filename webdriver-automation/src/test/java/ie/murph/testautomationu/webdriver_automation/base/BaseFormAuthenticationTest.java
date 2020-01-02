@@ -3,8 +3,8 @@ package ie.murph.testautomationu.webdriver_automation.base;
 import ie.murph.testautomationu.webdriver_automation.driver.ChromeDriverTest;
 import ie.murph.testautomationu.webdriver_automation.pages.home.Home;
 import ie.murph.testautomationu.webdriver_automation.pages.login.Login;
-import ie.murph.testautomationu.webdriver_automation.util.IText;
 import ie.murph.testautomationu.webdriver_automation.util.IWebsite;
+import ie.murph.testautomationu.webdriver_automation.util.Secure;
 
 public class BaseFormAuthenticationTest {
 	private ChromeDriverTest chromeDriverTest;
@@ -29,8 +29,8 @@ public class BaseFormAuthenticationTest {
 	}
 	
 	private void loginFunctionality() {
-		this.login.setUsernameTextBox(IText.THE_INTERNET_LOGIN_PAGE_USERNAME);
-		this.login.setPasswordTextBox(IText.THE_INTERNET_LOGIN_PAGE_PASSWORD);
+		this.login.setUsernameTextBox(Secure.THE_INTERNET_LOGIN_PAGE_USERNAME.toString());
+		this.login.setPasswordTextBox(Secure.THE_INTERNET_LOGIN_PAGE_PASSWORD.toString());
 		this.login.clickLoginButton();
 	}
 
