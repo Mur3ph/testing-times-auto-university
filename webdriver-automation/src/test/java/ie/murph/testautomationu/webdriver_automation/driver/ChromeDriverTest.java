@@ -39,4 +39,27 @@ public class ChromeDriverTest {
 		driver.manage().window().setSize(new Dimension(width, height)); // Mobile Devices new Dimension(width, height))
 	}
 	
+	public void setWebsiteUnderTest(String url) {
+		LOGGER.info("++visitWebsiteUnderTest()");
+		this.driver.get(url);
+	}
+	
+	public void shutBrowser() {
+		LOGGER.info("++shutBrowser()");
+		this.driver.quit();
+	}
+
+	public void delayBrowserClosingBy3Seconds() {
+		LOGGER.info("++delayBrowserClosing()");
+		try 
+		{
+			Thread.sleep(3000);
+		} 
+			catch (InterruptedException e) 
+		{
+			e.printStackTrace();
+		}
+		LOGGER.info("--delayBrowserClosing()");
+	}
+	
 }

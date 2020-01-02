@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import ie.murph.testautomationu.webdriver_automation.pages.login.Login;
 import ie.murph.testautomationu.webdriver_automation.util.IWebsite;
 import ie.murph.testautomationu.webdriver_automation.util.LoggingUtil;
 import ie.murph.testautomationu.webdriver_automation.util.XPath;
@@ -30,22 +31,24 @@ public class Home {
 		LOGGER.info("--run()");
 	}
 	
-	private void visitWebsiteUnderTest() {
+	public void visitWebsiteUnderTest() {
+		LOGGER.info("++visitWebsiteUnderTest()");
 		this.driver.get(IWebsite.THE_INTERNET);
 	}
 	
-	private void clickFormAuthenticationLink() {
+	public Login clickFormAuthenticationLink() {
 		LOGGER.info("++clickFormAuthenticationLink()");
 		this.driver.findElement(this.formAuthenticationLink).click();
 		LOGGER.info("--clickFormAuthenticationLink()");
+		return new Login(this.driver);
 	}
 	
-	private void shutBrowser() {
+	public void shutBrowser() {
 		LOGGER.info("++shutBrowser()");
 		this.driver.quit();
 	}
 
-	private void delayBrowserClosing() {
+	public void delayBrowserClosing() {
 		LOGGER.info("++delayBrowserClosing()");
 		try 
 		{
