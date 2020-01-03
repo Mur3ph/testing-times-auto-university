@@ -32,8 +32,9 @@ public class Login {
 		driver.findElement(passwordTextBox).sendKeys(password); 
 	}
 	
-	public void clickLoginButton() {
+	public SecureArea clickLoginButton() {
 		LOGGER.info("++clickLoginButton()");
 		driver.findElement(loginButton).click();
+		return new SecureArea(driver);
 	}
 }
