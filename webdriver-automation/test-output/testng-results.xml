@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13179" started-at="2020-01-03T22:30:21Z" finished-at="2020-01-03T22:30:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13179" started-at="2020-01-03T22:30:21Z" finished-at="2020-01-03T22:30:34Z">
+      <class name="ie.murph.testautomationu.webdriver_automation.login.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.login.LoginTest@546a03af]" name="setUp" is-config="true" duration-ms="7847" started-at="2020-01-03T22:30:21Z" finished-at="2020-01-03T22:30:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="formAuthenticationFunctionalityTest()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.login.LoginTest@546a03af]" name="formAuthenticationFunctionalityTest" is-config="true" duration-ms="787" started-at="2020-01-03T22:30:29Z" finished-at="2020-01-03T22:30:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formAuthenticationFunctionalityTest -->
+        <test-method status="PASS" signature="loginFunctionalityTest()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.login.LoginTest@546a03af]" name="loginFunctionalityTest" is-config="true" duration-ms="826" started-at="2020-01-03T22:30:29Z" finished-at="2020-01-03T22:30:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFunctionalityTest -->
+        <test-method status="PASS" signature="successfulLoginTest()[pri:3, instance:ie.murph.testautomationu.webdriver_automation.login.LoginTest@546a03af]" name="successfulLoginTest" duration-ms="51" started-at="2020-01-03T22:30:30Z" finished-at="2020-01-03T22:30:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLoginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.login.LoginTest@546a03af]" name="teardown" is-config="true" duration-ms="3648" started-at="2020-01-03T22:30:30Z" finished-at="2020-01-03T22:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- ie.murph.testautomationu.webdriver_automation.login.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
