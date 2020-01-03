@@ -33,7 +33,7 @@ public class LoginTest extends BaseTest{
 		this.secureArea = this.login.clickLoginButton();
 	}
 	
-	@Test(priority=3)
+	@Test(priority=1)
 	public void successfulLoginTest() {
 		LOGGER.info("++successfulLoginTest()");
 		String expectedResult = "You logged into a secure area!"; 
