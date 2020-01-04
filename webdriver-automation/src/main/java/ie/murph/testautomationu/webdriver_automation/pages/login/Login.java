@@ -5,12 +5,13 @@ import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import ie.murph.testautomationu.webdriver_automation.pages.Page;
 import ie.murph.testautomationu.webdriver_automation.util.CSS;
 import ie.murph.testautomationu.webdriver_automation.util.IText;
 import ie.murph.testautomationu.webdriver_automation.util.Id;
 import ie.murph.testautomationu.webdriver_automation.util.LoggingUtil;
 
-public class Login {
+public class Login extends Page{
 	private static final Logger LOGGER = LoggingUtil.getInstance(); 
 	private WebDriver driver;
 	private By usernameTextBox = By.id(Id.LOGIN_PAGE_USERNAME.toString());

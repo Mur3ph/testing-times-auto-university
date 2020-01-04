@@ -1,7 +1,7 @@
 package ie.murph.testautomationu.webdriver_automation.pages;
 
-public interface Page {
+public abstract class Page {
 	
-	String clickUrl(String url);
+	public void clickUrl(String url) {}
 
 }
