@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import ie.murph.testautomationu.webdriver_automation.pages.dropdown.Dropdown;
 import ie.murph.testautomationu.webdriver_automation.pages.login.Login;
 import ie.murph.testautomationu.webdriver_automation.util.IText;
 import ie.murph.testautomationu.webdriver_automation.util.LoggingUtil;
@@ -27,11 +28,11 @@ public class Home{
 		return new Login(this.driver);
 	}
 	
-	public Login clickDropdownLink() {
+	public Dropdown clickDropdownLink() {
 		LOGGER.info("++clickDropdownLink()");
 		clickUrl(XPath.HOME_PAGE_DROPDOWN.toString());
 		LOGGER.info("--clickDropdownLink()");
-		return new Login(this.driver);
+		return new Dropdown(this.driver);
 	}
 
 	private void clickUrl(String url) {
