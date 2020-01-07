@@ -15,8 +15,8 @@ public class DropdownTest extends BaseTest{
 	private Dropdown dropdown;
 	
 	@BeforeMethod
-	public void clickDropdownLinkOnHomePage() {
-		LOGGER.info("++clickDropdownLinkOnHomePage()");
+	public void gotoDropdownPage() {
+		LOGGER.info("++gotoDropdownPage()");
 		this.dropdown = home.clickDropdownLink();
 	}
 	
