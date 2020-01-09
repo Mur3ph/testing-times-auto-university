@@ -2,32 +2,36 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13153" started-at="2020-01-04T17:21:41Z" finished-at="2020-01-04T17:21:54Z">
+  <suite name="Default suite" duration-ms="12076" started-at="2020-01-09T22:30:40Z" finished-at="2020-01-09T22:30:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13153" started-at="2020-01-04T17:21:41Z" finished-at="2020-01-04T17:21:54Z">
-      <class name="ie.murph.testautomationu.webdriver_automation.login.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.login.LoginTest@546a03af]" name="setUp" is-config="true" duration-ms="8165" started-at="2020-01-04T17:21:41Z" finished-at="2020-01-04T17:21:49Z">
+    <test name="Default test" duration-ms="12076" started-at="2020-01-09T22:30:40Z" finished-at="2020-01-09T22:30:52Z">
+      <class name="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ea6d14e]" name="setUp" is-config="true" duration-ms="7868" started-at="2020-01-09T22:30:40Z" finished-at="2020-01-09T22:30:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="formAuthenticationFunctionalityTest()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.login.LoginTest@546a03af]" name="formAuthenticationFunctionalityTest" is-config="true" duration-ms="520" started-at="2020-01-04T17:21:49Z" finished-at="2020-01-04T17:21:49Z">
+        <test-method status="PASS" signature="gotoDropdownPage()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ea6d14e]" name="gotoDropdownPage" is-config="true" duration-ms="349" started-at="2020-01-09T22:30:47Z" finished-at="2020-01-09T22:30:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- formAuthenticationFunctionalityTest -->
-        <test-method status="PASS" signature="loginFunctionalityTest()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.login.LoginTest@546a03af]" name="loginFunctionalityTest" is-config="true" duration-ms="707" started-at="2020-01-04T17:21:49Z" finished-at="2020-01-04T17:21:50Z">
+        </test-method> <!-- gotoDropdownPage -->
+        <test-method status="PASS" signature="selectOptionFromDropdownList()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ea6d14e]" name="selectOptionFromDropdownList" is-config="true" duration-ms="132" started-at="2020-01-09T22:30:48Z" depends-on-methods="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest.gotoDropdownPage" finished-at="2020-01-09T22:30:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFunctionalityTest -->
-        <test-method status="PASS" signature="successfulLoginTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.login.LoginTest@546a03af]" name="successfulLoginTest" duration-ms="81" started-at="2020-01-04T17:21:50Z" finished-at="2020-01-04T17:21:50Z">
+        </test-method> <!-- selectOptionFromDropdownList -->
+        <test-method status="PASS" signature="getSelectedOptionFromDropdownList()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ea6d14e]" name="getSelectedOptionFromDropdownList" is-config="true" duration-ms="115" started-at="2020-01-09T22:30:48Z" depends-on-methods="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest.selectOptionFromDropdownList" finished-at="2020-01-09T22:30:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- successfulLoginTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.login.LoginTest@546a03af]" name="teardown" is-config="true" duration-ms="3667" started-at="2020-01-04T17:21:50Z" finished-at="2020-01-04T17:21:54Z">
+        </test-method> <!-- getSelectedOptionFromDropdownList -->
+        <test-method status="PASS" signature="isSelectedOptionTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ea6d14e]" name="isSelectedOptionTest" duration-ms="6" started-at="2020-01-09T22:30:48Z" finished-at="2020-01-09T22:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSelectedOptionTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ea6d14e]" name="teardown" is-config="true" duration-ms="3603" started-at="2020-01-09T22:30:48Z" finished-at="2020-01-09T22:30:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- ie.murph.testautomationu.webdriver_automation.login.LoginTest -->
+      </class> <!-- ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

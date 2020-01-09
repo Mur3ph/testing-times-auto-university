@@ -3,7 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="ie.murph.testautomationu.webdriver_automation.login.LoginTest"/>
+      <class name="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest"/>
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Failed suite [Default suite] -->

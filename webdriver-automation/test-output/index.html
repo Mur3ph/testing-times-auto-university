@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Windows\Temp\testng-eclipse--225043552\testng-customsuite.xml</span>
+                    <span>C:\Windows\Temp\testng-eclipse-1227070635\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ie.murph.testautomationu.webdriver_automation.login.LoginTest" hash-for-method="successfulLoginTest">successfulLoginTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest" hash-for-method="isSelectedOptionTest">isSelectedOptionTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ie.murph.testautomationu.webdriver_automation.login.LoginTest</span>
+              <span class="class-name">ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="successfulLoginTest">
-                  </a> <!-- successfulLoginTest -->
-                  <span class="method-name">successfulLoginTest</span>
+                  <a name="isSelectedOptionTest">
+                  </a> <!-- isSelectedOptionTest -->
+                  <span class="method-name">isSelectedOptionTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Windows\Temp\testng-eclipse--225043552\testng-customsuite.xml</span>
+            <span class="header-content">C:\Windows\Temp\testng-eclipse-1227070635\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +144,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ie.murph.testautomationu.webdriver_automation.login.LoginTest&quot;/&gt;
+      &lt;class name=&quot;ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,14 +186,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'successfulLoginTest')
-data.setCell(0, 2, 'ie.murph.testautomationu.webdriver_automation.login.LoginTest')
-data.setCell(0, 3, 81);
+data.setCell(0, 1, 'isSelectedOptionTest')
+data.setCell(0, 2, 'ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest')
+data.setCell(0, 3, 6);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 81 ms</span>
+              <span class="suite-total-time">Total running time: 6 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,26 +219,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ie.murph.testautomationu.webdriver_automation.login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">formAuthenticationFunctionalityTest</span>
-                <span class="method-start">8168 ms</span>
+                <span class="method-name">gotoDropdownPage</span>
+                <span class="method-start">7871 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">loginFunctionalityTest</span>
-                <span class="method-start">8688 ms</span>
+                <span class="method-name">selectOptionFromDropdownList</span>
+                <span class="method-start">8220 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">getSelectedOptionFromDropdownList</span>
+                <span class="method-start">8352 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">successfulLoginTest</span>
-                <span class="method-start">9395 ms</span>
+                <span class="method-name">isSelectedOptionTest</span>
+                <span class="method-start">8467 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">9477 ms</span>
+                <span class="method-start">8473 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
