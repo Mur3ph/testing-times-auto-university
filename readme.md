@@ -1,8 +1,11 @@
 # Test Automation University Projects
 
-Angies Web driver Automation:
+Web driver Automation:
 
-1. Chrome Web Driver
-2. Java 8 (Angie used 11 or 12)
+1. Selenium Web Driver - Chrome 
+2. Java 8: (Streams, Lambda)
 3. Maven
-4. Eclipes IDE (Angie used Intelij)
+4. Eclipes IDE
+5. Selenium Support (Dependancy for Testing Dropdown lists)
+6. TestNG (Running testcases against selenium framework, annotations, assertions and generating reports)
+7. Page Object Model (POM) Design pattern (Using a POM design for each web page for cleaner more maintainable framework)
