@@ -11,13 +11,13 @@ import static org.testng.Assert.*;
 
 import ie.murph.testautomationu.webdriver_automation.base.BaseTest;
 import ie.murph.testautomationu.webdriver_automation.pages.dropdown.Dropdown;
+import ie.murph.testautomationu.webdriver_automation.util.IText;
 import ie.murph.testautomationu.webdriver_automation.util.LoggingUtil;
 
 public class DropdownTest extends BaseTest{
 	private static final Logger LOGGER = LoggingUtil.getInstance(); 
 	private Dropdown dropdown;
 	private List<String> selectedOptionsFromDropdown;
-	private static final String OPTION_1 = "Option 1";
 	
 	@BeforeMethod
 	public void gotoDropdownPage() {
@@ -28,7 +28,7 @@ public class DropdownTest extends BaseTest{
 	@BeforeMethod(dependsOnMethods= { "gotoDropdownPage" })
 	public void selectOptionFromDropdownList() {
 		LOGGER.info("++selectOptionFromDropdownList()");
-		this.dropdown.selectFromDropdownList(OPTION_1);
+		this.dropdown.selectFromDropdownList(IText.DROPDOWN_PAGE_OPTION_1);
 	}
 	
 	@BeforeMethod(dependsOnMethods= { "selectOptionFromDropdownList" })
@@ -41,7 +41,7 @@ public class DropdownTest extends BaseTest{
 	public void isSelectedOptionTest() {
 		LOGGER.info("++isSelectedOptionTest()");
 		assertEquals(this.selectedOptionsFromDropdown.size(), 1, "Incorrect number of selected options from dropdown list");
-		assertTrue(this.selectedOptionsFromDropdown.contains(OPTION_1), OPTION_1 + " not selected");
+		assertTrue(this.selectedOptionsFromDropdown.contains(IText.DROPDOWN_PAGE_OPTION_1), IText.DROPDOWN_PAGE_OPTION_1 + " not selected");
 	}
 	
 //	@Test(priority=2)
