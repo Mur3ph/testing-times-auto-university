@@ -2,8 +2,8 @@ package ie.murph.testautomationu.webdriver_automation.base;
 
 import java.util.logging.Logger;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import ie.murph.testautomationu.webdriver_automation.driver.ChromeDriverTest;
 import ie.murph.testautomationu.webdriver_automation.pages.home.Home;
@@ -15,7 +15,7 @@ public class BaseTest {
 	private ChromeDriverTest chromeDriverTest;
 	protected Home home;
 	
-	@BeforeClass
+	@BeforeTest
 	public void setUp() {
 		LOGGER.info("++setUp()");
 		chromeDriverTest = new ChromeDriverTest();
@@ -23,7 +23,7 @@ public class BaseTest {
 		this.home = new Home(chromeDriverTest.getChromeDriver());
 	}
 	
-	@AfterClass
+	@AfterTest
 	public void teardown() {
 		LOGGER.info("++teardown()");
 		chromeDriverTest.delayBrowserClosingBy3Seconds();
