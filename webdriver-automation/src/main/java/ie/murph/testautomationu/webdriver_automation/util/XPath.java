@@ -8,7 +8,8 @@ public enum XPath
 	MENU_ELEMENT_ANCHOR("//a[@href='/shifting_content/menu']"),
 	LIST_OF_ANCHOR_TAGS_ONLY_IN_MENU("//ul/li/a"),
 	HOME_PAGE_FORM_AUTHENTICATION("//li/a[@href='/login']"),
-	HOME_PAGE_DROPDOWN("//li/a[@href='/dropdown']");
+	HOME_PAGE_DROPDOWN("//li/a[@href='/dropdown']"),
+	HOME_PAGE_HOVER("//li/a[@href='/hovers']");
 	
 	private final String text;
 
