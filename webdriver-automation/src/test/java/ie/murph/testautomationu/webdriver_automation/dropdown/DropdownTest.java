@@ -41,14 +41,13 @@ public class DropdownTest extends BaseTest{
 	@Test(priority=1)
 	public void isSelectedOptionTest() {
 		LOGGER.info("++isSelectedOptionTest()");
-		assertEquals(this.selectedOptionsFromDropdown.size(), 1, "Incorrect number of selected options from dropdown list");
-//		assertTrue(this.selectedOptionsFromDropdown.contains(IText.DROPDOWN_PAGE_OPTION_1), IText.DROPDOWN_PAGE_OPTION_1 + " not selected");
+		assertEquals(this.selectedOptionsFromDropdown.size(), 1, IText.ASSERT_MESSAGE_INCORRECT_NUMBER_OF_SELECTED_OPTIONS);
 	}
 	
 	@Test(priority=2)
 	public void selectedOptionTest() {
 		LOGGER.info("++selectedOptionTest()");
-		assertTrue(this.selectedOptionsFromDropdown.contains(IText.DROPDOWN_PAGE_OPTION_1), IText.DROPDOWN_PAGE_OPTION_1 + " not selected");
+		assertTrue(this.selectedOptionsFromDropdown.contains(IText.DROPDOWN_PAGE_OPTION_1), IText.DROPDOWN_PAGE_OPTION_1 + IText.ASSERT_MESSAGE_IS_SELECT);
 	}
 
 }
