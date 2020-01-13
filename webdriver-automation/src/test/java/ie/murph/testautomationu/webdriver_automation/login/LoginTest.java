@@ -4,6 +4,7 @@ import ie.murph.testautomationu.webdriver_automation.base.BaseTest;
 
 import ie.murph.testautomationu.webdriver_automation.pages.login.Login;
 import ie.murph.testautomationu.webdriver_automation.pages.login.SecureArea;
+import ie.murph.testautomationu.webdriver_automation.util.IText;
 import ie.murph.testautomationu.webdriver_automation.util.LoggingUtil;
 import ie.murph.testautomationu.webdriver_automation.util.Secure;
 
@@ -36,8 +37,7 @@ public class LoginTest extends BaseTest{
 	@Test(priority=1)
 	public void successfulLoginTest() {
 		LOGGER.info("++successfulLoginTest()");
-		String expectedResult = "You logged into a secure area!"; 
-		assertTrue(this.secureArea.getSuccessfulWelcomeText().contains(expectedResult));
+		assertTrue(this.secureArea.getSuccessfulWelcomeText().contains(IText.SECURE_PAGE_LOGIN_SUCCESS_EXPECTED_MESSAGE));
 	}
 
 }
