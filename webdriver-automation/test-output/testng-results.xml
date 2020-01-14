@@ -1,49 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12870" started-at="2020-01-12T21:29:17Z" finished-at="2020-01-12T21:29:30Z">
+  <suite name="Default suite" duration-ms="12216" started-at="2020-01-14T22:33:20Z" finished-at="2020-01-14T22:33:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12870" started-at="2020-01-12T21:29:17Z" finished-at="2020-01-12T21:29:30Z">
-      <class name="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ad5c04e]" name="setUp" is-config="true" duration-ms="7941" started-at="2020-01-12T21:29:17Z" finished-at="2020-01-12T21:29:25Z">
+    <test name="Default test" duration-ms="12216" started-at="2020-01-14T22:33:20Z" finished-at="2020-01-14T22:33:32Z">
+      <class name="ie.murph.testautomationu.webdriver_automation.hover.HoverTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.hover.HoverTest@28864e92]" name="setUp" is-config="true" duration-ms="7656" started-at="2020-01-14T22:33:20Z" finished-at="2020-01-14T22:33:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoDropdownPage()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ad5c04e]" name="gotoDropdownPage" is-config="true" duration-ms="335" started-at="2020-01-12T21:29:25Z" finished-at="2020-01-12T21:29:25Z">
+        <test-method status="PASS" signature="clickHoverAnchorLink()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.hover.HoverTest@28864e92]" name="clickHoverAnchorLink" is-config="true" duration-ms="512" started-at="2020-01-14T22:33:28Z" finished-at="2020-01-14T22:33:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoDropdownPage -->
-        <test-method status="PASS" signature="selectOptionFromDropdownList()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ad5c04e]" name="selectOptionFromDropdownList" is-config="true" duration-ms="144" started-at="2020-01-12T21:29:25Z" finished-at="2020-01-12T21:29:25Z">
+        </test-method> <!-- clickHoverAnchorLink -->
+        <test-method status="PASS" signature="hoverUserOneTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.hover.HoverTest@28864e92]" name="hoverUserOneTest" duration-ms="377" started-at="2020-01-14T22:33:28Z" finished-at="2020-01-14T22:33:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectOptionFromDropdownList -->
-        <test-method status="PASS" signature="getSelectedOptionFromDropdownList()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ad5c04e]" name="getSelectedOptionFromDropdownList" is-config="true" duration-ms="104" started-at="2020-01-12T21:29:25Z" depends-on-methods="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest.selectOptionFromDropdownList" finished-at="2020-01-12T21:29:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSelectedOptionFromDropdownList -->
-        <test-method status="PASS" signature="isSelectedOptionTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ad5c04e]" name="isSelectedOptionTest" duration-ms="9" started-at="2020-01-12T21:29:25Z" finished-at="2020-01-12T21:29:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isSelectedOptionTest -->
-        <test-method status="PASS" signature="selectOptionFromDropdownList()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ad5c04e]" name="selectOptionFromDropdownList" is-config="true" duration-ms="49" started-at="2020-01-12T21:29:25Z" finished-at="2020-01-12T21:29:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectOptionFromDropdownList -->
-        <test-method status="PASS" signature="getSelectedOptionFromDropdownList()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ad5c04e]" name="getSelectedOptionFromDropdownList" is-config="true" duration-ms="83" started-at="2020-01-12T21:29:25Z" depends-on-methods="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest.selectOptionFromDropdownList" finished-at="2020-01-12T21:29:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSelectedOptionFromDropdownList -->
-        <test-method status="PASS" signature="selectedOptionTest()[pri:2, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ad5c04e]" name="selectedOptionTest" duration-ms="1" started-at="2020-01-12T21:29:26Z" finished-at="2020-01-12T21:29:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectedOptionTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest@6ad5c04e]" name="teardown" is-config="true" duration-ms="4190" started-at="2020-01-12T21:29:26Z" finished-at="2020-01-12T21:29:30Z">
+        </test-method> <!-- hoverUserOneTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.hover.HoverTest@28864e92]" name="teardown" is-config="true" duration-ms="3647" started-at="2020-01-14T22:33:28Z" finished-at="2020-01-14T22:33:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest -->
+      </class> <!-- ie.murph.testautomationu.webdriver_automation.hover.HoverTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
