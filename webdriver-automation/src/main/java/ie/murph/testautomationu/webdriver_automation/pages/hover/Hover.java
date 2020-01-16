@@ -16,6 +16,7 @@ public class Hover {
 	private WebDriver driver;
 	private By figureByDivFigure = By.className("figure");
 	private By figureByDivFigureCaption = By.className("figcaption");
+	private WebElement figureElement;
 	
 	public Hover(WebDriver driver) {
 		LOGGER.info("++Hover( " + driver + " ) " + IText.CONSTRUCTOR);
@@ -25,10 +26,20 @@ public class Hover {
 //	Index should start at 1 - last is 3, first element in elements array will start at 1
 	public FigureCaption hoverOverFigure(int index) {
 		LOGGER.info("++hoverOverFigure( " + index + " ) ");
-		WebElement figureElement = this.driver.findElements(this.figureByDivFigure).get(index - 1);
-		Actions actions = new Actions(this.driver);
-		actions.moveToElement(figureElement).perform();
+		this.findFirstElement(index);
+		this.moveToImageAction();
 		return new FigureCaption(figureElement.findElement(figureByDivFigureCaption));
+	}
+	
+	private void findFirstElement(int index){
+		LOGGER.info("++getElement( " + index + " ) ");
+		this.figureElement = this.driver.findElements(this.figureByDivFigure).get(index - 1);
+	}
+	
+	private void moveToImageAction() {
+		LOGGER.info("++findImageAction() ");
+		Actions actions = new Actions(this.driver);
+		actions.moveToElement(this.figureElement).perform();
 	}
 
 }
