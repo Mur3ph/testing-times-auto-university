@@ -9,7 +9,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import ie.murph.testautomationu.webdriver_automation.driver.ChromeDriverTest;
+import ie.murph.testautomationu.webdriver_automation.driver.ChromeBrowserDriver;
 import ie.murph.testautomationu.webdriver_automation.util.LoggingUtil;
 
 public class RandomTest {
@@ -23,7 +23,7 @@ public class RandomTest {
 	
 	public void setUp() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-		driver = new ChromeDriverTest().getChromeDriver();
+		driver = new ChromeBrowserDriver().getChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/");
 		
 		searchingForMulipleElements();

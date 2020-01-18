@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import ie.murph.testautomationu.webdriver_automation.driver.ChromeDriverTest;
+import ie.murph.testautomationu.webdriver_automation.driver.ChromeBrowserDriver;
 import ie.murph.testautomationu.webdriver_automation.util.IText;
 import ie.murph.testautomationu.webdriver_automation.util.IWebsite;
 import ie.murph.testautomationu.webdriver_automation.util.LoggingUtil;
@@ -22,7 +22,7 @@ public class NavigationTest {
 	
 	public NavigationTest() {
 		LOGGER.info("++NavigationTest Constructor: Declaring Chrome Web Driver and setting website URL");
-		driver = new ChromeDriverTest().getChromeDriver();
+		driver = new ChromeBrowserDriver().getChromeDriver();
 		driver.get(IWebsite.THE_INTERNET);
 	}
 	
