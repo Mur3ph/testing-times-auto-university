@@ -33,8 +33,8 @@ public class KeyPressTest extends BaseTest{
 	
 	@Test(priority=2)
 	public void pieTest() {
-		this.keyPress.enterText(Keys.ALT + "227");
-		assertEquals(this.keyPress.getLabel(), "You entered: BACK_SPACE");
+		this.keyPress.enterPi();
+//		assertEquals(this.keyPress.getLabel(), "You entered: BACK_SPACE");
 	}
 
 }

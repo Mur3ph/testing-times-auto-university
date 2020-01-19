@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12514" started-at="2020-01-19T21:06:54Z" finished-at="2020-01-19T21:07:07Z">
+  <suite name="Default suite" duration-ms="12376" started-at="2020-01-19T21:19:00Z" finished-at="2020-01-19T21:19:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12514" started-at="2020-01-19T21:06:54Z" finished-at="2020-01-19T21:07:07Z">
+    <test name="Default test" duration-ms="12376" started-at="2020-01-19T21:19:00Z" finished-at="2020-01-19T21:19:13Z">
       <class name="ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="setUp" is-config="true" duration-ms="8382" started-at="2020-01-19T21:06:54Z" finished-at="2020-01-19T21:07:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="setUp" is-config="true" duration-ms="8189" started-at="2020-01-19T21:19:00Z" finished-at="2020-01-19T21:19:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoKeyPressPage()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="gotoKeyPressPage" is-config="true" duration-ms="329" started-at="2020-01-19T21:07:03Z" finished-at="2020-01-19T21:07:03Z">
+        <test-method status="PASS" signature="gotoKeyPressPage()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="gotoKeyPressPage" is-config="true" duration-ms="324" started-at="2020-01-19T21:19:09Z" finished-at="2020-01-19T21:19:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoKeyPressPage -->
-        <test-method status="PASS" signature="sendTextToKeyPressInputBox()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="sendTextToKeyPressInputBox" is-config="true" duration-ms="102" started-at="2020-01-19T21:07:03Z" finished-at="2020-01-19T21:07:03Z">
+        <test-method status="PASS" signature="sendTextToKeyPressInputBox()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="sendTextToKeyPressInputBox" is-config="true" duration-ms="1" started-at="2020-01-19T21:19:09Z" finished-at="2020-01-19T21:19:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendTextToKeyPressInputBox -->
-        <test-method status="PASS" signature="backSpaceTest()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="backSpaceTest" duration-ms="49" started-at="2020-01-19T21:07:03Z" finished-at="2020-01-19T21:07:03Z">
+        <test-method status="PASS" signature="backSpaceTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="backSpaceTest" duration-ms="146" started-at="2020-01-19T21:19:09Z" finished-at="2020-01-19T21:19:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- backSpaceTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="teardown" is-config="true" duration-ms="3640" started-at="2020-01-19T21:07:03Z" finished-at="2020-01-19T21:07:07Z">
+        <test-method status="PASS" signature="sendTextToKeyPressInputBox()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="sendTextToKeyPressInputBox" is-config="true" duration-ms="0" started-at="2020-01-19T21:19:09Z" finished-at="2020-01-19T21:19:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendTextToKeyPressInputBox -->
+        <test-method status="PASS" signature="pieTest()[pri:2, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="pieTest" duration-ms="68" started-at="2020-01-19T21:19:09Z" finished-at="2020-01-19T21:19:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pieTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest@6ea6d14e]" name="teardown" is-config="true" duration-ms="3636" started-at="2020-01-19T21:19:09Z" finished-at="2020-01-19T21:19:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
