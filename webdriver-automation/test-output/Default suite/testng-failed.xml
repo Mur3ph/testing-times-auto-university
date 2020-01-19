@@ -3,20 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="ie.murph.testautomationu.webdriver_automation.hover.HoverTest"/>
+      <class name="ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="ie.murph.testautomationu.webdriver_automation.hover.HoverTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="hoverImage"/>
-          <include name="setUp"/>
-          <include name="clickHoverAnchorLink"/>
-          <include name="ishoverUserOneTest"/>
-        </methods>
-      </class> <!-- ie.murph.testautomationu.webdriver_automation.hover.HoverTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
