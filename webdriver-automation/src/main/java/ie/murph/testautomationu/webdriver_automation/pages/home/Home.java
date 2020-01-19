@@ -39,8 +39,15 @@ public class Home{
 	public Hover clickHoverLink() {
 		LOGGER.info("++clickHoverLink()");
 		clickUrl(XPath.HOME_PAGE_HOVER.toString());
-		LOGGER.info("--clickDropdownLink()");
+		LOGGER.info("--clickHoverLink()");
 		return new Hover(driver);
+	}
+	
+	public KeyPress clickKeyPressesLink() {
+		LOGGER.info("++clickKeyPressesLink()");
+		clickUrl(XPath.HOME_KEY_PRESSES.toString());
+		LOGGER.info("--clickKeyPressesLink()");
+		return new KeyPress(driver);
 	}
 
 	private void clickUrl(String url) {
@@ -50,3 +57,4 @@ public class Home{
 	}
 	
 }
+
