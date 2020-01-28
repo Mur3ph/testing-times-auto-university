@@ -17,10 +17,10 @@
 
 ## TODO: List of features to automate
 
-- [] Logon page
-- [] Forgot Password
-- [] Register page
-- [] Automate Flight checkin and choose best seat
+- Logon page
+- Forgot Password
+- Register page
+- Automate Flight checkin and choose best seat
 
 
 ## Resources
