@@ -25,7 +25,7 @@ public class ZipTest {
             get("http://zippopotam.us/us/90210").
         then().
             assertThat().
-            body("places[0].'place name'", not(equalTo("Beijing")));
+            body("places[0].'place name'", not(equalTo("Beijing baby")));
 	}
 
 }
