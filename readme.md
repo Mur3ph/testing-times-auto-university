@@ -1,13 +1,14 @@
 # Test Automation University Projects
 
-## Technologies - Web driver Automation:
+## Technologies:
 
 - [x] Selenium Web Driver - Chrome 
 - [x] Java 8: (Streams, Lambda)
 - [x] Maven
 - [x] Eclipes IDE
 - [x] Selenium Support (Dependancy for Testing Dropdown lists)
-- [x] TestNG (Running testcases against selenium framework, annotations, assertions and generating reports)
+- [x] xUnit Frameworks (TestNG, JUnit)
+- [x] TestNG (Running testcases against selenium framework, annotations, assertions (hard & soft) and generating reports)
 - [x] Page Object Model (POM) Design pattern (Using a POM design for each web page for cleaner more maintainable framework)
 - [x] Rest Assured (Automating API tests)
 - [x] JUnit (Runner for Rest Assured tests, assertions, annotations)
