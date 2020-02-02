@@ -28,14 +28,14 @@ public class KeyPressTest extends BaseTest{
 		LOGGER.info("++sendTextToKeyPressInputBox()");
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, dependsOnMethods={"sendTextToKeyPressInputBox"})
 	public void backSpaceTest() {
 		LOGGER.info("++backSpaceTest()");
 		this.keyPress.enterText("A" + Keys.BACK_SPACE);
 		assertEquals(this.keyPress.getLabel(), "You entered: BACK_SPACE");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, dependsOnMethods={"sendTextToKeyPressInputBox", "backSpaceTest"})
 	public void pieTest() {
 		LOGGER.info("++pieTest()");
 		this.keyPress.enterPi();
