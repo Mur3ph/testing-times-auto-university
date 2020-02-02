@@ -38,13 +38,13 @@ public class DropdownTest extends BaseTest{
 		this.selectedOptionsFromDropdown = this.dropdown.getAllSelectedOptionsFromDropdown();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, groups= {"regression", "integration", "defect.fix"}, dependsOnGroups= {})
 	public void isSelectedOptionTest() {
 		LOGGER.info("++isSelectedOptionTest()");
 		assertEquals(this.selectedOptionsFromDropdown.size(), 1, IText.ASSERT_MESSAGE_INCORRECT_NUMBER_OF_SELECTED_OPTIONS);
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, groups= {"smoke", "system", "defect.progress"}, dependsOnGroups= {})
 	public void selectedOptionTest() {
 		LOGGER.info("++selectedOptionTest()");
 		assertTrue(this.selectedOptionsFromDropdown.contains(IText.DROPDOWN_PAGE_OPTION_1), IText.DROPDOWN_PAGE_OPTION_1 + IText.ASSERT_MESSAGE_IS_SELECT);

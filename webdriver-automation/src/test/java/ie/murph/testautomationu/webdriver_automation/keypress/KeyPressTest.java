@@ -28,7 +28,7 @@ public class KeyPressTest extends BaseTest{
 		LOGGER.info("++sendTextToKeyPressInputBox()");
 	}
 	
-	@Test(priority=1, dependsOnMethods={"sendTextToKeyPressInputBox"})
+	@Test(priority=1,  groups= {"smoke"})
 	public void backSpaceTest() {
 		LOGGER.info("++backSpaceTest()");
 		this.keyPress.enterText("A" + Keys.BACK_SPACE);

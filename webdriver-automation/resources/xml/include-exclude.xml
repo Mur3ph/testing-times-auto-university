@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation Suite">
+  <test name="Include Regression - Exclude Defect Groups Test">  
+    <groups>
+     	<run>
+     		<include name = "regression"/>
+     		<exclude name = "defect.*"/> 	<!-- Exclude tag overrides or has preference over include tags -->
+    	</run>	
+    </groups>    
+    <classes>
+      <class name="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest"/>
+    </classes>    
+  </test> <!-- All Groups Test -->
+</suite> <!-- Test Automation Suite -->

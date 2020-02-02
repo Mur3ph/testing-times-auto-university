@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation Suite">
+  <test name="Include 2 Classes Groups Test: Needs more work, currently failing">  
+    <groups>
+     	<run>
+     		<include name = "regression"/>
+     		<include name = "smoke"/>
+    	</run>	
+    </groups>    
+    <classes>
+      <class name="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest"/>
+      <class name="ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest"/>
+    </classes>    
+  </test> <!-- All Groups Test -->
+</suite> <!-- Test Automation Suite -->
