@@ -30,31 +30,31 @@ public class HoverTest extends BaseTest{
 		this.caption = hoverpage.hoverOverFigure(1);
 	}
 
-	@Test(priority=1)
+	@Test(priority=1, groups= {"regression", "defect.fix"}, dependsOnGroups= {})
 	public void ishoverUserOneTest() {
 		LOGGER.info("++ishoverUserOneTest()");
 		assertTrue(this.caption.isCaptionDisplayed(), "Caption is not displayed");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, groups= {"smoke", "defect.progress"}, dependsOnGroups= {})
 	public void checkTitleHoverUserOneTest() {
 		LOGGER.info("++checkTitleHoverUserOneTest()");
 		assertEquals(this.caption.getTitle(), "name: user1", "Username is incorrect");
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3, groups= {"system", "defect.open"}, dependsOnGroups= {})
 	public void checkAnchorLinkTextHoverUserOneTest() {
 		LOGGER.info("++checkAnchorLinkTextHoverUserOneTest()");
 		assertEquals(this.caption.getAnchorLinkText(), "View profile", "View profile is incorrect");
 	}
 	
-	@Test(priority=4)
+	@Test(priority=4, groups= {"integration", "defect.cant-reproduce"}, dependsOnGroups= {})
 	public void isAnchorUrlEndsWithHoverUserOneTest() {
 		LOGGER.info("++isAnchorUrlEndsWithHoverUserOneTest()");
 		assertTrue(this.caption.getAnchorUrl().endsWith("/users/1"), "URL that endwiths /user/1 not found");
 	}
 	
-	@Test(priority=5)
+	@Test(priority=5, groups= {"sanity", "unit", "interface", "beta/acceptance", "defect.rejected"}, dependsOnGroups= {})
 	public void isAnchorUrlContainsHoverUserOneTest() {
 		LOGGER.info("++isAnchorUrlContainsHoverUserOneTest()");
 		assertTrue(this.caption.getAnchorUrl().contains("/users/1"), "URL that contains /user/1 not found");
