@@ -51,13 +51,13 @@ public class HoverTest extends BaseTest{
 	@Test(priority=4, groups= {"integration", "defect.cant-reproduce"}, dependsOnGroups= {})
 	public void isAnchorUrlEndsWithHoverUserOneTest() {
 		LOGGER.info("++isAnchorUrlEndsWithHoverUserOneTest()");
-		assertTrue(this.caption.getAnchorUrl().endsWith("/users/1"), "URL that endwiths /user/1 not found");
+		assertTrue(this.caption.getAnchorUrl().endsWith("/users/1"), "URL that endwiths /user/1 is not found");
 	}
 	
 	@Test(priority=5, groups= {"sanity", "unit", "interface", "beta/acceptance", "defect.rejected"}, dependsOnGroups= {})
 	public void isAnchorUrlContainsHoverUserOneTest() {
 		LOGGER.info("++isAnchorUrlContainsHoverUserOneTest()");
-		assertTrue(this.caption.getAnchorUrl().contains("/users/1"), "URL that contains /user/1 not found");
+		assertTrue(this.caption.getAnchorUrl().contains("/users/1"), "URL that contains /user/1 is not found");
 	}
 	
 }
