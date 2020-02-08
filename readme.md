@@ -6,9 +6,9 @@
 - [x] Java 8: (Streams, Lambda)
 - [x] Maven
 - [x] Eclipes IDE
-- [x] Selenium Support (Dependancy for Testing Dropdown lists)
+- [x] Selenium Support (Dependency for Testing Dropdown lists)
 - [x] xUnit Frameworks (TestNG, JUnit)
-- [x] TestNG (Running testcases against selenium framework, annotations, assertions (hard & soft) and generating reports)
+- [x] TestNG (Running testcases against selenium framework, annotations, assertions (hard & soft), Dependency Testing (i.e. Methods and Group Attributes), Data Driven Testing, Cross Browser Testing, and generating reports)
 - [x] Page Object Model (POM) Design pattern (Using a POM design for each web page for cleaner more maintainable framework)
 - [x] Rest Assured (Automating API tests)
 - [x] JUnit (Runner for Rest Assured tests, assertions, annotations)
