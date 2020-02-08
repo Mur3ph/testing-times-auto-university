@@ -12,7 +12,7 @@ public enum BrowserDriverFactoryEnum {
 	private static final Logger LOGGER = LoggingUtil.getInstance();
 
 	public synchronized WebDriver createBrowserDriver(Browser browser) {
-		IDriver iDriver;
+//		IDriver iDriver;
 
 		LOGGER.info("++createBrowserDriver(" + browser + ")");
 		switch (browser) {

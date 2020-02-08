@@ -6,21 +6,21 @@
 	<test name="Test On IE">
 		<parameter name="BrowserType" value="Internet Explorer" />
 		<classes>
-			<class name="ie.murph.testautomationu.webdriver_automation.some_test_class" />
+			<class name="ie.murph.testautomationu.webdriver_automation.base.BaseCrossBrowserTest" />
 		</classes>
 	</test> <!-- Test On IE -->
 
 	<test name="Test On Firefox">
 		<parameter name="BrowserType" value="Firefox" />
 		<classes>
-			<class name="ie.murph.testautomationu.webdriver_automation.some_test_class" />
+			<class name="ie.murph.testautomationu.webdriver_automation.base.BaseCrossBrowserTest" />
 		</classes>
 	</test> <!-- Test On Firefox -->
 
 	<test name="Test On Chrome">
 		<parameter name="BrowserType" value="Chrome" />
 		<classes>
-			<class name="ie.murph.testautomationu.webdriver_automation.some_test_class" />
+			<class name="ie.murph.testautomationu.webdriver_automation.base.BaseCrossBrowserTest" />
 		</classes>
 	</test> <!-- Test On Chrome -->
 
