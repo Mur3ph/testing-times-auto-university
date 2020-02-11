@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Automation Suite]">
-  <test name="Include 2 Classes Groups Test">
-    <groups>
-      <run>
-        <include name="regression"/>
-        <include name="smoke"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest"/>
-      <class name="ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest"/>
+      <class name="ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest"/>
     </classes>
-  </test> <!-- Include 2 Classes Groups Test -->
-  <test name="Include 2 Classes Groups Test(failed)">
-    <groups>
-      <run>
-        <include name="regression"/>
-        <include name="smoke"/>
-      </run>
-    </groups>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
     <classes>
-      <class name="ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest">
+      <class name="ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest">
         <methods>
-          <include name="selectedOptionTest"/>
-          <include name="isSelectedOptionTest"/>
+          <include name="sliderTest"/>
+          <include name="gotoHorizontalSliderPage"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="pushSlider"/>
         </methods>
-      </class> <!-- ie.murph.testautomationu.webdriver_automation.dropdown.DropdownTest -->
-      <class name="ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest">
-        <methods>
-          <include name="backSpaceTest"/>
-        </methods>
-      </class> <!-- ie.murph.testautomationu.webdriver_automation.keypress.KeyPressTest -->
+      </class> <!-- ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest -->
     </classes>
-  </test> <!-- Include 2 Classes Groups Test(failed) -->
-</suite> <!-- Failed suite [Test Automation Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

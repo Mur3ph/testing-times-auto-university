@@ -9,6 +9,7 @@ import ie.murph.testautomationu.webdriver_automation.pages.dropdown.Dropdown;
 import ie.murph.testautomationu.webdriver_automation.pages.hover.Hover;
 import ie.murph.testautomationu.webdriver_automation.pages.keypress.KeyPress;
 import ie.murph.testautomationu.webdriver_automation.pages.login.Login;
+import ie.murph.testautomationu.webdriver_automation.pages.slider.HorizontalSlider;
 import ie.murph.testautomationu.webdriver_automation.util.IText;
 import ie.murph.testautomationu.webdriver_automation.util.LoggingUtil;
 import ie.murph.testautomationu.webdriver_automation.util.XPath;
@@ -49,6 +50,13 @@ public class Home{
 		clickUrl(XPath.HOME_KEY_PRESSES.toString());
 		LOGGER.info("--clickKeyPressesLink()");
 		return new KeyPress(driver);
+	}
+	
+	public HorizontalSlider clickHorizontalSliderLink() {
+		LOGGER.info("++clickHorizontalSliderLink()");
+		clickUrl(XPath.HOME_HORIZONTAL_SLIDER.toString());
+		LOGGER.info("--clickKeyPressesLink()");
+		return new HorizontalSlider(driver);
 	}
 
 	private void clickUrl(String url) {

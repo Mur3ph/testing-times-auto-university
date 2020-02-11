@@ -35,7 +35,7 @@ public class KeyPressTest extends BaseTest{
 		assertEquals(this.keyPress.getLabel(), "You entered: BACK_SPACE");
 	}
 	
-	@Test(priority=2, dependsOnMethods={"sendTextToKeyPressInputBox", "backSpaceTest"})
+	@Test(priority=2, dependsOnMethods={"backSpaceTest"})
 	public void pieTest() {
 		LOGGER.info("++pieTest()");
 		this.keyPress.enterPi();
