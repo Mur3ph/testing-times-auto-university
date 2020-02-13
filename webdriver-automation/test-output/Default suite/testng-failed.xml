@@ -6,17 +6,4 @@
       <class name="ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest">
-        <methods>
-          <include name="sliderTest"/>
-          <include name="gotoHorizontalSliderPage"/>
-          <include name="teardown"/>
-          <include name="setUp"/>
-          <include name="pushSlider"/>
-        </methods>
-      </class> <!-- ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

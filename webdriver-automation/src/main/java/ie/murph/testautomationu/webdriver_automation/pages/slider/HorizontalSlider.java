@@ -1,5 +1,6 @@
 package ie.murph.testautomationu.webdriver_automation.pages.slider;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -16,16 +17,29 @@ public class HorizontalSlider {
 	private WebDriver driver;
 	private By labelSliderOutput = By.id("range");
 	private By slider = By.xpath(XPath.SLIDER.toString());
+	private List<Keys> listOfArrowRightKeyStrokes;
 
 	public HorizontalSlider(WebDriver driver) {
 		LOGGER.info("++HorizontalSlider( " + driver + " )");
 		this.driver = driver;
+		this.listOfArrowRightKeyStrokes = new ArrayList<>();
 	}
 	
 	public void sendArrow() {
 		LOGGER.info("++sendArrow()");
-		driver.findElement(slider).sendKeys(Keys.chord(arrowRight()));
+		addMultipleArrowRightKeysToList();
+		for(int i=0;i<=getListOfArrowKeys().size()-1;i++)
+        {
+            driver.findElement(slider).sendKeys(getListOfArrowKeys().get(i));
+        }
 		LOGGER.info("--sendArrow()");
+	}
+	
+	private void addMultipleArrowRightKeysToList() {
+		LOGGER.info("++addMultipleArrowRightKeysToList()");
+		for(int i = 0; i <= 7; i++) {
+			this.listOfArrowRightKeyStrokes.add(arrowRight());
+		}
 	}
 	
 	private Keys arrowRight() {
@@ -33,18 +47,33 @@ public class HorizontalSlider {
 		return Keys.ARROW_RIGHT;
 	}
 	
-	private char[] multipleArrowRight() {
-		LOGGER.info("++multipleArrowRight()");
-		char[] arrowArray = new char[8];
-		for(int x = 0; x < 8; x++) {
-//			arrowArray[x] = Keys.ARROW_RIGHT;
-		}
-		return arrowArray;
+	private List<Keys> getListOfArrowKeys(){
+		LOGGER.info("++getListOfArrowKeys()");
+		return this.listOfArrowRightKeyStrokes;
 	}
 	
 	public String getSliderRange() {
 		LOGGER.info("++getSliderRange()");
 		return driver.findElement(labelSliderOutput).getText();
 	}
+	
+	public void setSliderValue(String value){
+		LOGGER.info("++setSliderValue( " + value + " )");
+        while(!getSliderValue().equals(value)){
+            driver.findElement(slider).sendKeys(arrowRight());
+        }
+    }
+
+    public String getSliderValue(){
+    	LOGGER.info("++getSliderValue()");
+        return driver.findElement(labelSliderOutput).getText();
+    }
+    
+    public void setSliderValueToZero(){
+		LOGGER.info("++setSliderValueToZero()");
+        while(!getSliderValue().equals("0")){
+            driver.findElement(slider).sendKeys(Keys.ARROW_LEFT);
+        }
+    }
 
 }
