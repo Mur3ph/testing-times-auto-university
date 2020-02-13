@@ -13,7 +13,9 @@
 - [x] Rest Assured (Automating API tests)
 - [x] JUnit (Runner for Rest Assured tests, assertions, annotations)
 - [x] Wiremock (Mocking objects)
-- [x] Hamcrest (Assertions)
+- [x] Hamcrest (Matchers for checks (equalsTo()/hasItem()/contains()/etc.), Assertions)
+- [x] Gherkin syntax (Given/When/Then) for API Rest-Assured automated test cases
+- [x] Selectin Elements in API Response: JsonPath, GPath, xmlPath, etc. (Similar to what XPath is for HTML)
 
 
 ## TODO: List of features to automate
