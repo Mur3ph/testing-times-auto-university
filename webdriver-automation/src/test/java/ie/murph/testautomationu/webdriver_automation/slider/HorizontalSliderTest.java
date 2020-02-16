@@ -47,7 +47,7 @@ public class HorizontalSliderTest extends BaseTest {
 	public void testSlideToWholeNumber() {
 		LOGGER.info("++testSlideToWholeNumber()");
 		this.horizontalSlider.setSliderValue(value);
-		assertEquals(this.horizontalSlider.getSliderValue(), value, "Slider value is incorrect Angie");
+		assertEquals(this.horizontalSlider.getSliderRange(), value, "Slider value is incorrect Angie");
 	}
 
 }

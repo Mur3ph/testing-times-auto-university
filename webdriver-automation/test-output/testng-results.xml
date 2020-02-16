@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13432" started-at="2020-02-13T21:29:57Z" finished-at="2020-02-13T21:30:11Z">
+  <suite name="Default suite" duration-ms="18326" started-at="2020-02-16T23:31:06Z" finished-at="2020-02-16T23:31:24Z">
     <groups>
       <group name="smoke">
         <method signature="HorizontalSliderTest.sliderTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="sliderTest" class="ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest"/>
         <method signature="HorizontalSliderTest.sliderZeroResetTest()[pri:2, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="sliderZeroResetTest" class="ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="13432" started-at="2020-02-13T21:29:57Z" finished-at="2020-02-13T21:30:11Z">
+    <test name="Default test" duration-ms="18326" started-at="2020-02-16T23:31:06Z" finished-at="2020-02-16T23:31:24Z">
       <class name="ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="setUp" is-config="true" duration-ms="7748" started-at="2020-02-13T21:29:57Z" finished-at="2020-02-13T21:30:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="setUp" is-config="true" duration-ms="12240" started-at="2020-02-16T23:31:06Z" finished-at="2020-02-16T23:31:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoHorizontalSliderPage()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="gotoHorizontalSliderPage" is-config="true" duration-ms="322" started-at="2020-02-13T21:30:05Z" finished-at="2020-02-13T21:30:05Z">
+        <test-method status="PASS" signature="gotoHorizontalSliderPage()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="gotoHorizontalSliderPage" is-config="true" duration-ms="628" started-at="2020-02-16T23:31:18Z" finished-at="2020-02-16T23:31:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoHorizontalSliderPage -->
-        <test-method status="PASS" signature="pushSlider()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="pushSlider" is-config="true" duration-ms="1" started-at="2020-02-13T21:30:05Z" finished-at="2020-02-13T21:30:05Z">
+        <test-method status="PASS" signature="pushSlider()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="pushSlider" is-config="true" duration-ms="0" started-at="2020-02-16T23:31:19Z" finished-at="2020-02-16T23:31:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pushSlider -->
-        <test-method status="PASS" signature="sliderTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="sliderTest" duration-ms="1006" started-at="2020-02-13T21:30:05Z" finished-at="2020-02-13T21:30:06Z">
+        <test-method status="PASS" signature="sliderTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="sliderTest" duration-ms="1082" started-at="2020-02-16T23:31:19Z" finished-at="2020-02-16T23:31:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sliderTest -->
-        <test-method status="PASS" signature="pushSlider()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="pushSlider" is-config="true" duration-ms="1" started-at="2020-02-13T21:30:06Z" finished-at="2020-02-13T21:30:06Z">
+        <test-method status="PASS" signature="pushSlider()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="pushSlider" is-config="true" duration-ms="1" started-at="2020-02-16T23:31:20Z" finished-at="2020-02-16T23:31:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pushSlider -->
-        <test-method status="PASS" signature="sliderZeroResetTest()[pri:2, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="sliderZeroResetTest" duration-ms="19" started-at="2020-02-13T21:30:06Z" finished-at="2020-02-13T21:30:06Z">
+        <test-method status="PASS" signature="sliderZeroResetTest()[pri:2, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="sliderZeroResetTest" duration-ms="20" started-at="2020-02-16T23:31:20Z" finished-at="2020-02-16T23:31:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sliderZeroResetTest -->
-        <test-method status="PASS" signature="testSlideToWholeNumber()[pri:3, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="testSlideToWholeNumber" duration-ms="600" started-at="2020-02-13T21:30:06Z" depends-on-methods="ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest.sliderZeroResetTest" finished-at="2020-02-13T21:30:07Z">
+        <test-method status="PASS" signature="testSlideToWholeNumber()[pri:3, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="testSlideToWholeNumber" duration-ms="605" started-at="2020-02-16T23:31:20Z" depends-on-methods="ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest.sliderZeroResetTest" finished-at="2020-02-16T23:31:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSlideToWholeNumber -->
-        <test-method status="PASS" signature="pushSlider()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="pushSlider" is-config="true" duration-ms="0" started-at="2020-02-13T21:30:06Z" finished-at="2020-02-13T21:30:06Z">
+        <test-method status="PASS" signature="pushSlider()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="pushSlider" is-config="true" duration-ms="0" started-at="2020-02-16T23:31:20Z" finished-at="2020-02-16T23:31:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pushSlider -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="teardown" is-config="true" duration-ms="3724" started-at="2020-02-13T21:30:07Z" finished-at="2020-02-13T21:30:11Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.slider.HorizontalSliderTest@6ea6d14e]" name="teardown" is-config="true" duration-ms="3678" started-at="2020-02-16T23:31:21Z" finished-at="2020-02-16T23:31:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
