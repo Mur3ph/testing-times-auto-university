@@ -24,5 +24,8 @@ public class JavaScriptAlert {
 		driver.findElement(javascriptTriggeredAlertButton).click();
 	}
 	
-	
+	public void pressOkayOnJSAlert() {
+		LOGGER.info("++pressOkayOnJSAlert()");
+		driver.switchTo().alert().accept();
+	}
 }
