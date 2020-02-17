@@ -58,6 +58,13 @@ public class Home{
 		LOGGER.info("--clickKeyPressesLink()");
 		return new HorizontalSlider(driver);
 	}
+	
+//	public JavaScriptAlert clickJavaScriptAlertLink() {
+//		LOGGER.info("++clickJavaScriptAlertLink()");
+//		clickUrl(XPath.HOME_HORIZONTAL_SLIDER.toString());
+//		LOGGER.info("--clickKeyPressesLink()");
+//		return new HorizontalSlider(driver);
+//	}
 
 	private void clickUrl(String url) {
 		LOGGER.info("++clickUrl( " + url + " )");
