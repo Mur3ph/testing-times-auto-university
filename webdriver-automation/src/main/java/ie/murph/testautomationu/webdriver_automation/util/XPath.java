@@ -12,7 +12,8 @@ public enum XPath
 	HOME_PAGE_DROPDOWN("//li/a[@href='/dropdown']"),
 	HOME_PAGE_HOVER("//li/a[@href='/hovers']"),
 	HOME_KEY_PRESSES("//li/a[@href='/key_presses']"),
-	HOME_HORIZONTAL_SLIDER("//li/a[@href='/horizontal_slider']");
+	HOME_HORIZONTAL_SLIDER("//li/a[@href='/horizontal_slider']"),
+	HOME_JAVASCRIPT_ALERTS("//li/a[@href='/javascript_alerts']");
 	
 	private final String text;
 
