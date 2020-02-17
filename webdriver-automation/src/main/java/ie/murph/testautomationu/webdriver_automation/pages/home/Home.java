@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import ie.murph.testautomationu.webdriver_automation.pages.alert.JavaScriptAlert;
 import ie.murph.testautomationu.webdriver_automation.pages.dropdown.Dropdown;
 import ie.murph.testautomationu.webdriver_automation.pages.hover.Hover;
 import ie.murph.testautomationu.webdriver_automation.pages.keypress.KeyPress;
@@ -59,12 +60,12 @@ public class Home{
 		return new HorizontalSlider(driver);
 	}
 	
-//	public JavaScriptAlert clickJavaScriptAlertLink() {
-//		LOGGER.info("++clickJavaScriptAlertLink()");
-//		clickUrl(XPath.HOME_HORIZONTAL_SLIDER.toString());
-//		LOGGER.info("--clickKeyPressesLink()");
-//		return new HorizontalSlider(driver);
-//	}
+	public JavaScriptAlert clickJavaScriptAlertLink() {
+		LOGGER.info("++clickJavaScriptAlertLink()");
+		clickUrl(XPath.HOME_HORIZONTAL_SLIDER.toString());
+		LOGGER.info("--clickJavaScriptAlertLink()");
+		return new JavaScriptAlert(driver);
+	}
 
 	private void clickUrl(String url) {
 		LOGGER.info("++clickUrl( " + url + " )");
