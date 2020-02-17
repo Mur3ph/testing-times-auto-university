@@ -48,21 +48,21 @@ public class Home{
 	
 	public KeyPress clickKeyPressesLink() {
 		LOGGER.info("++clickKeyPressesLink()");
-		clickUrl(XPath.HOME_KEY_PRESSES.toString());
+		clickUrl(XPath.HOME_PAGE_KEY_PRESSES.toString());
 		LOGGER.info("--clickKeyPressesLink()");
 		return new KeyPress(driver);
 	}
 	
 	public HorizontalSlider clickHorizontalSliderLink() {
 		LOGGER.info("++clickHorizontalSliderLink()");
-		clickUrl(XPath.HOME_HORIZONTAL_SLIDER.toString());
+		clickUrl(XPath.HOME_PAGE_HORIZONTAL_SLIDER.toString());
 		LOGGER.info("--clickKeyPressesLink()");
 		return new HorizontalSlider(driver);
 	}
 	
 	public JavaScriptAlert clickJavaScriptAlertLink() {
 		LOGGER.info("++clickJavaScriptAlertLink()");
-		clickUrl(XPath.HOME_HORIZONTAL_SLIDER.toString());
+		clickUrl(XPath.HOME_PAGE_JAVASCRIPT_ALERTS.toString());
 		LOGGER.info("--clickJavaScriptAlertLink()");
 		return new JavaScriptAlert(driver);
 	}

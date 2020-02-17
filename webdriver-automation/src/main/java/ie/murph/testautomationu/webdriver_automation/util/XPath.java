@@ -8,12 +8,13 @@ public enum XPath
 	MENU_ELEMENT_ANCHOR("//a[@href='/shifting_content/menu']"),
 	LIST_OF_ANCHOR_TAGS_ONLY_IN_MENU("//ul/li/a"),
 	SLIDER("//div/input[@type='range']"),
+	JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_BUTTON("//button[text()='Click for JS Alert']"),
 	HOME_PAGE_FORM_AUTHENTICATION("//li/a[@href='/login']"),
 	HOME_PAGE_DROPDOWN("//li/a[@href='/dropdown']"),
 	HOME_PAGE_HOVER("//li/a[@href='/hovers']"),
-	HOME_KEY_PRESSES("//li/a[@href='/key_presses']"),
-	HOME_HORIZONTAL_SLIDER("//li/a[@href='/horizontal_slider']"),
-	HOME_JAVASCRIPT_ALERTS("//li/a[@href='/javascript_alerts']");
+	HOME_PAGE_KEY_PRESSES("//li/a[@href='/key_presses']"),
+	HOME_PAGE_HORIZONTAL_SLIDER("//li/a[@href='/horizontal_slider']"),
+	HOME_PAGE_JAVASCRIPT_ALERTS("//li/a[@href='/javascript_alerts']");
 	
 	private final String text;
 
