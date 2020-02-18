@@ -1,7 +1,5 @@
 package ie.murph.testautomationu.webdriver_automation.alert;
 
-import static org.testng.Assert.assertEquals;
-
 import java.util.logging.Logger;
 
 import org.testng.annotations.BeforeClass;
@@ -23,7 +21,7 @@ public class JavaScriptAlertTest extends BaseTest{
 	
 	@Test(priority = 1, groups = { "ui" })
 	public void javascriptAlertTest() {
-		LOGGER.info("++sliderTest()");
+		LOGGER.info("++javascriptAlertTest()");
 		this.javaScriptAlert.triggerJavaScriptAlertButton();
 		this.javaScriptAlert.pressOkayOnJSAlert();
 	}

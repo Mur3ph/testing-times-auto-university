@@ -13,6 +13,7 @@ public class JavaScriptAlert {
 	private static final Logger LOGGER = LoggingUtil.getInstance(); 
 	private WebDriver driver;
 	private By javascriptTriggeredAlertButton = By.xpath(XPath.JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_BUTTON.toString());
+	private By javascriptResultsLabel = By.xpath(XPath.JAVASCRIPT_ALERTS_PAGE_RESULTS_LABEL.toString());
 
 	public JavaScriptAlert(WebDriver driver) {
 		LOGGER.info("++JavaScriptAlert( " + driver + " ) " + IText.CONSTRUCTOR);
@@ -27,5 +28,10 @@ public class JavaScriptAlert {
 	public void pressOkayOnJSAlert() {
 		LOGGER.info("++pressOkayOnJSAlert()");
 		driver.switchTo().alert().accept();
+	}
+	
+	public String getJavaScriptAlertLabelResult() {
+		LOGGER.info("++getJavaScriptAlertLabelResult()");
+		return driver.findElement(javascriptResultsLabel).getText();
 	}
 }

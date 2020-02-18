@@ -9,6 +9,7 @@ public enum XPath
 	LIST_OF_ANCHOR_TAGS_ONLY_IN_MENU("//ul/li/a"),
 	SLIDER("//div/input[@type='range']"),
 	JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_BUTTON("//button[text()='Click for JS Alert']"),
+	JAVASCRIPT_ALERTS_PAGE_RESULTS_LABEL("//p[text()='You successfuly clicked an alert']"),
 	HOME_PAGE_FORM_AUTHENTICATION("//li/a[@href='/login']"),
 	HOME_PAGE_DROPDOWN("//li/a[@href='/dropdown']"),
 	HOME_PAGE_HOVER("//li/a[@href='/hovers']"),
