@@ -16,7 +16,7 @@ public class ZipCode90210Test {
     	LOGGER.info("++checkStatusCode_expectHttp200()");
         given().
         when().
-            get("http://zippopotam.us/us/90210").
+            get("http://zippopotam.us/us/90210").			// Gherkin syntax: Given/When/Then
         then().
             assertThat().
             statusCode(200);
@@ -55,7 +55,7 @@ public class ZipCode90210Test {
             get("http://zippopotam.us/us/90210").
         then().
             assertThat().
-            body("places[0].'place name'", equalTo("Beverly Hills"));
+            body("places[0].'place name'", equalTo("Beverly Hills")); // Using the JsonPath and GPath to find elements of the DOM. equalTo() Hamcrest matcher
         LOGGER.info("--checkPlaceNameInResponseBody_expectBeverlyHills()");
     }
 
@@ -67,7 +67,7 @@ public class ZipCode90210Test {
             get("http://zippopotam.us/us/90210").
         then().
             assertThat().
-            body("places[0].state", equalTo("California"));
+            body("places[0].state", equalTo("California"));			// Using the JsonPath and GPath to find elements of the DOM. equalTo() Hamcrest matcher
         LOGGER.info("--checkStateNameInResponseBody_expectCalifornia()");
     }
 
@@ -79,7 +79,7 @@ public class ZipCode90210Test {
             get("http://zippopotam.us/us/90210").
         then().
             assertThat().
-            body("places.'place name'", hasItem("Beverly Hills"));
+            body("places.'place name'", hasItem("Beverly Hills"));	// Using the JsonPath and GPath to find elements of the DOM. hasItem() Hamcrest matcher
         LOGGER.info("--checkListOfPlaceNamesInResponseBody_expectContainsBeverlyHills()");
     }
 
@@ -91,7 +91,7 @@ public class ZipCode90210Test {
             get("http://zippopotam.us/us/90210").
         then().
             assertThat().
-            body("places.'place name'", hasSize(1));
+            body("places.'place name'", hasSize(1));			// Using the JsonPath and GPath to find elements of the DOM. hasSize() Hamcrest matcher
         LOGGER.info("--checkNumberOfPlaceNamesInResponseBody_expectOne()");
     }
 }
