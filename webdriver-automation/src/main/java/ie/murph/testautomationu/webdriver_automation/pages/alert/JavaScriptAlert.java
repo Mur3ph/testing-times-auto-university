@@ -12,7 +12,8 @@ import ie.murph.testautomationu.webdriver_automation.util.XPath;
 public class JavaScriptAlert {
 	private static final Logger LOGGER = LoggingUtil.getInstance(); 
 	private WebDriver driver;
-	private By javascriptTriggeredAlertButton = By.xpath(XPath.JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_BUTTON.toString());
+	private By javascriptTriggeredAlertButton = By.xpath(XPath.JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_ALERT_BUTTON.toString());
+	private By javascriptTriggeredConfirmButton = By.xpath(XPath.JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_CONFIRM_BUTTON.toString());
 	private By javascriptResultsLabel = By.xpath(XPath.JAVASCRIPT_ALERTS_PAGE_RESULTS_LABEL.toString());
 
 	public JavaScriptAlert(WebDriver driver) {
