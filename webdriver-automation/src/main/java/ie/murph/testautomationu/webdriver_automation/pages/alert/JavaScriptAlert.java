@@ -35,4 +35,19 @@ public class JavaScriptAlert {
 		LOGGER.info("++getJavaScriptAlertLabelResult()");
 		return driver.findElement(javascriptResultsLabel).getText();
 	}
+	
+	public void triggerJavaScriptConfirmButton() {
+		LOGGER.info("++triggerJavaScriptConfirmButton()");
+		driver.findElement(javascriptTriggeredConfirmButton).click();
+	}
+	
+	public void pressCancelOnJSConfirm() {
+		LOGGER.info("++pressCancelOnJSConfirm()");
+		driver.switchTo().alert().dismiss();
+	}
+	
+	public String getJavaScriptConfirmLabelResult() {
+		LOGGER.info("++getJavaScriptConfirmLabelResult()");
+		return driver.findElement(javascriptResultsLabel).getText();
+	}
 }
