@@ -15,6 +15,7 @@ public class JavaScriptAlertTest extends BaseTest{
 	private static final Logger LOGGER = LoggingUtil.getInstance();
 	private JavaScriptAlert javaScriptAlert;
 	private String labelValue = "You successfuly clicked an alert";
+	private String labelCancelConfirm = "You clicked: Cancel";
 
 	@BeforeClass
 	public void gotoJavaScriptAlertsPage() {
@@ -28,6 +29,14 @@ public class JavaScriptAlertTest extends BaseTest{
 		this.javaScriptAlert.triggerJavaScriptAlertButton();
 		this.javaScriptAlert.pressOkayOnJSAlert();
 		assertEquals(this.javaScriptAlert.getJavaScriptAlertLabelResult(), labelValue, "Label value is incorrect");
+	}
+	
+	@Test(priority = 1, groups = { "ui" })
+	public void javascriptConfrimTest() {
+		LOGGER.info("++javascriptConfrimTest()");
+		this.javaScriptAlert.triggerJavaScriptConfirmButton();
+		this.javaScriptAlert.pressCancelOnJSConfirm();
+		assertEquals(this.javaScriptAlert.getJavaScriptConfirmLabelResult(), labelCancelConfirm, "Label value is incorrect");
 	}
 
 }
