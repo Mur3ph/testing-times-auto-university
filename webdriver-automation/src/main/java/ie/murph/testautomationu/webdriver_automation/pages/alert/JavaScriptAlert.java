@@ -46,8 +46,8 @@ public class JavaScriptAlert {
 		driver.switchTo().alert().dismiss();
 	}
 	
-	public String getJavaScriptConfirmLabelResult() {
-		LOGGER.info("++getJavaScriptConfirmLabelResult()");
-		return driver.findElement(javascriptResultsLabel).getText();
+	public String getJavaScriptConfirmAlertResult() {
+		LOGGER.info("++getJavaScriptConfirmAlertResult()");
+		return driver.switchTo().alert().getText();
 	}
 }

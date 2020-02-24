@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13504" started-at="2020-02-18T23:17:23Z" finished-at="2020-02-18T23:17:37Z">
+  <suite name="Default suite" duration-ms="11907" started-at="2020-02-24T23:01:45Z" finished-at="2020-02-24T23:01:57Z">
     <groups>
       <group name="ui">
         <method signature="JavaScriptAlertTest.javascriptAlertTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptAlertTest" class="ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest"/>
+        <method signature="JavaScriptAlertTest.javascriptConfrimTest()[pri:2, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptConfrimTest" class="ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest"/>
       </group> <!-- ui -->
     </groups>
-    <test name="Default test" duration-ms="13504" started-at="2020-02-18T23:17:23Z" finished-at="2020-02-18T23:17:37Z">
+    <test name="Default test" duration-ms="11907" started-at="2020-02-24T23:01:45Z" finished-at="2020-02-24T23:01:57Z">
       <class name="ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="setUp" is-config="true" duration-ms="9139" started-at="2020-02-18T23:17:23Z" finished-at="2020-02-18T23:17:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="setUp" is-config="true" duration-ms="7628" started-at="2020-02-24T23:01:45Z" finished-at="2020-02-24T23:01:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoJavaScriptAlertsPage()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="gotoJavaScriptAlertsPage" is-config="true" duration-ms="520" started-at="2020-02-18T23:17:32Z" finished-at="2020-02-18T23:17:33Z">
+        <test-method status="PASS" signature="gotoJavaScriptAlertsPage()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="gotoJavaScriptAlertsPage" is-config="true" duration-ms="337" started-at="2020-02-24T23:01:52Z" finished-at="2020-02-24T23:01:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoJavaScriptAlertsPage -->
-        <test-method status="PASS" signature="javascriptAlertTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptAlertTest" duration-ms="160" started-at="2020-02-18T23:17:33Z" finished-at="2020-02-18T23:17:33Z">
+        <test-method status="PASS" signature="javascriptAlertTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptAlertTest" duration-ms="140" started-at="2020-02-24T23:01:53Z" finished-at="2020-02-24T23:01:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- javascriptAlertTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="teardown" is-config="true" duration-ms="3678" started-at="2020-02-18T23:17:33Z" finished-at="2020-02-18T23:17:37Z">
+        <test-method status="PASS" signature="javascriptConfrimTest()[pri:2, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptConfrimTest" duration-ms="88" started-at="2020-02-24T23:01:53Z" finished-at="2020-02-24T23:01:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javascriptConfrimTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="teardown" is-config="true" duration-ms="3705" started-at="2020-02-24T23:01:53Z" finished-at="2020-02-24T23:01:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
