@@ -5,7 +5,6 @@ import static org.testng.Assert.assertEquals;
 import java.util.logging.Logger;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import ie.murph.testautomationu.webdriver_automation.base.BaseTest;
@@ -42,9 +41,4 @@ public class JavaScriptAlertTest extends BaseTest{
 		assertEquals(this.alertConfirmActualText, alertConfirmExpectedText, "Label value is incorrect");
 	}
 	
-//	@Test
-//	public String getConfirmAlertActualTest() {
-//		return this.javaScriptAlert.getJavaScriptConfirmAlertResult();
-//	}
-
 }
