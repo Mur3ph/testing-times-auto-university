@@ -50,4 +50,6 @@ public class JavaScriptAlert {
 		LOGGER.info("++getJavaScriptConfirmAlertResult()");
 		return driver.switchTo().alert().getText();
 	}
+	
+	
 }

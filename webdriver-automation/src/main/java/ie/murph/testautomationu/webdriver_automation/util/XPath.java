@@ -10,6 +10,7 @@ public enum XPath
 	SLIDER("//div/input[@type='range']"),
 	JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_ALERT_BUTTON("//button[text()='Click for JS Alert']"),
 	JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_CONFIRM_BUTTON("//button[text()='Click for JS Confirm']"),
+	JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_PROMPT_BUTTON("//button[text()='Click for JS Prompt']"),
 	JAVASCRIPT_ALERTS_PAGE_RESULTS_LABEL("//p[text()='You successfuly clicked an alert']"),
 	HOME_PAGE_FORM_AUTHENTICATION("//li/a[@href='/login']"),
 	HOME_PAGE_DROPDOWN("//li/a[@href='/dropdown']"),
