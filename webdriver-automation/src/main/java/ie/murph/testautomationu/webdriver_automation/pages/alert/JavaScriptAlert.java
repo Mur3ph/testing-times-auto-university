@@ -14,6 +14,7 @@ public class JavaScriptAlert {
 	private WebDriver driver;
 	private By javascriptTriggeredAlertButton = By.xpath(XPath.JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_ALERT_BUTTON.toString());
 	private By javascriptTriggeredConfirmButton = By.xpath(XPath.JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_CONFIRM_BUTTON.toString());
+	private By javascriptTriggeredPromptButton = By.xpath(XPath.JAVASRIPT_ALERTS_PAGE_JAVASCRIPT_PROMPT_BUTTON.toString());
 	private By javascriptResultsLabel = By.xpath(XPath.JAVASCRIPT_ALERTS_PAGE_RESULTS_LABEL.toString());
 
 	public JavaScriptAlert(WebDriver driver) {
@@ -51,5 +52,18 @@ public class JavaScriptAlert {
 		return driver.switchTo().alert().getText();
 	}
 	
+	public void triggerJavaScriptPromptButton() {
+		LOGGER.info("++triggerJavaScriptPromptButton()");
+		driver.findElement(javascriptTriggeredPromptButton).click();
+	}
 	
+	public void sendMessageToPromptAlert(String message) {
+		LOGGER.info("++sendMessageToPromptAlert( " + message + " )");
+		driver.switchTo().alert().sendKeys(message);
+	}
+	
+	public String getJavaScriptPromptAlertResult() {
+		LOGGER.info("++getJavaScriptPromptAlertResult()");
+		return driver.switchTo().alert().getText();
+	}
 }
