@@ -62,6 +62,11 @@ public class JavaScriptAlert {
 		driver.switchTo().alert().sendKeys(message);
 	}
 	
+	public void pressOkayOnJSPromptAlert() {
+		LOGGER.info("++pressOkayOnJSPromptAlert()");
+		driver.switchTo().alert().accept();
+	}
+	
 	public String getJavaScriptPromptAlertResult() {
 		LOGGER.info("++getJavaScriptPromptAlertResult()");
 		return driver.switchTo().alert().getText();
