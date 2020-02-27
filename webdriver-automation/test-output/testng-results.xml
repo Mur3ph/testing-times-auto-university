@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11907" started-at="2020-02-24T23:01:45Z" finished-at="2020-02-24T23:01:57Z">
+  <suite name="Default suite" duration-ms="12757" started-at="2020-02-27T23:08:48Z" finished-at="2020-02-27T23:09:01Z">
     <groups>
       <group name="ui">
         <method signature="JavaScriptAlertTest.javascriptAlertTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptAlertTest" class="ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest"/>
         <method signature="JavaScriptAlertTest.javascriptConfrimTest()[pri:2, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptConfrimTest" class="ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest"/>
+        <method signature="JavaScriptAlertTest.javascriptPromptTest()[pri:3, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptPromptTest" class="ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest"/>
       </group> <!-- ui -->
     </groups>
-    <test name="Default test" duration-ms="11907" started-at="2020-02-24T23:01:45Z" finished-at="2020-02-24T23:01:57Z">
+    <test name="Default test" duration-ms="12757" started-at="2020-02-27T23:08:48Z" finished-at="2020-02-27T23:09:01Z">
       <class name="ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="setUp" is-config="true" duration-ms="7628" started-at="2020-02-24T23:01:45Z" finished-at="2020-02-24T23:01:52Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="setUp" is-config="true" duration-ms="7908" started-at="2020-02-27T23:08:48Z" finished-at="2020-02-27T23:08:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoJavaScriptAlertsPage()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="gotoJavaScriptAlertsPage" is-config="true" duration-ms="337" started-at="2020-02-24T23:01:52Z" finished-at="2020-02-24T23:01:53Z">
+        <test-method status="PASS" signature="gotoJavaScriptAlertsPage()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="gotoJavaScriptAlertsPage" is-config="true" duration-ms="333" started-at="2020-02-27T23:08:56Z" finished-at="2020-02-27T23:08:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoJavaScriptAlertsPage -->
-        <test-method status="PASS" signature="javascriptAlertTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptAlertTest" duration-ms="140" started-at="2020-02-24T23:01:53Z" finished-at="2020-02-24T23:01:53Z">
+        <test-method status="PASS" signature="javascriptAlertTest()[pri:1, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptAlertTest" duration-ms="145" started-at="2020-02-27T23:08:56Z" finished-at="2020-02-27T23:08:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- javascriptAlertTest -->
-        <test-method status="PASS" signature="javascriptConfrimTest()[pri:2, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptConfrimTest" duration-ms="88" started-at="2020-02-24T23:01:53Z" finished-at="2020-02-24T23:01:53Z">
+        <test-method status="PASS" signature="javascriptConfrimTest()[pri:2, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptConfrimTest" duration-ms="101" started-at="2020-02-27T23:08:57Z" finished-at="2020-02-27T23:08:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- javascriptConfrimTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="teardown" is-config="true" duration-ms="3705" started-at="2020-02-24T23:01:53Z" finished-at="2020-02-24T23:01:57Z">
+        <test-method status="PASS" signature="javascriptPromptTest()[pri:3, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="javascriptPromptTest" duration-ms="127" started-at="2020-02-27T23:08:57Z" finished-at="2020-02-27T23:08:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javascriptPromptTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ie.murph.testautomationu.webdriver_automation.alert.JavaScriptAlertTest@28864e92]" name="teardown" is-config="true" duration-ms="4131" started-at="2020-02-27T23:08:57Z" finished-at="2020-02-27T23:09:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

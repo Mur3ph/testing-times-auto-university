@@ -69,6 +69,6 @@ public class JavaScriptAlert {
 	
 	public String getJavaScriptPromptAlertResult() {
 		LOGGER.info("++getJavaScriptPromptAlertResult()");
-		return driver.switchTo().alert().getText();
+		return driver.findElement(javascriptResultsLabel).getText();
 	}
 }
