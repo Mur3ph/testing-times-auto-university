@@ -47,6 +47,7 @@ public class JavaScriptAlertTest extends BaseTest{
 		LOGGER.info("++javascriptPromptTest()");
 		this.javaScriptAlert.triggerJavaScriptPromptButton();
 		this.javaScriptAlert.sendMessageToPromptAlert(labelPromptMessage);
+		this.javaScriptAlert.pressOkayOnJSPromptAlert();
 		assertEquals(this.javaScriptAlert.getJavaScriptPromptAlertResult(), "You entered: " + labelPromptMessage, "Label value is incorrect");
 	}
 	
