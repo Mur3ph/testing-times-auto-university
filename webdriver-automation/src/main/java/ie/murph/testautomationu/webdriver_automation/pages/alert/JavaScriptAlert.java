@@ -32,8 +32,8 @@ public class JavaScriptAlert {
 		driver.switchTo().alert().accept();
 	}
 	
-	public String getJavaScriptAlertLabelResult() {
-		LOGGER.info("++getJavaScriptAlertLabelResult()");
+	public String getJavaScriptLabelResult() {
+		LOGGER.info("++getJavaScriptLabelResult()");
 		return driver.findElement(javascriptResultsLabel).getText();
 	}
 	
@@ -65,10 +65,5 @@ public class JavaScriptAlert {
 	public void pressOkayOnJSPromptAlert() {
 		LOGGER.info("++pressOkayOnJSPromptAlert()");
 		driver.switchTo().alert().accept();
-	}
-	
-	public String getJavaScriptPromptAlertResult() {
-		LOGGER.info("++getJavaScriptPromptAlertResult()");
-		return driver.findElement(javascriptResultsLabel).getText();
 	}
 }
