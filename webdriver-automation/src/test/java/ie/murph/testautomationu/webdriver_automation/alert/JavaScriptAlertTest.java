@@ -14,10 +14,11 @@ import ie.murph.testautomationu.webdriver_automation.util.LoggingUtil;
 public class JavaScriptAlertTest extends BaseTest{
 	private static final Logger LOGGER = LoggingUtil.getInstance();
 	private JavaScriptAlert javaScriptAlert;
-	private String labelValue = "You successfuly clicked an alert";
-	private String alertConfirmExpectedText = "I am a JS Confirm";
+	private final String labelValue = "You successfuly clicked an alert";
+	private final String alertConfirmExpectedText = "I am a JS Confirm";
 	private String alertConfirmActualText;
-	private String labelPromptMessage = "Prompt message";
+	private final String labelPromptMessage = "Prompt message";
+	private final String labelValueIsIncorrect = "Label value is incorrect";
 
 	@BeforeClass
 	public void gotoJavaScriptAlertsPage() {
@@ -30,7 +31,7 @@ public class JavaScriptAlertTest extends BaseTest{
 		LOGGER.info("++javascriptAlertTest()");
 		this.javaScriptAlert.triggerJavaScriptAlertButton();
 		this.javaScriptAlert.pressOkayOnJSAlert();
-		assertEquals(this.javaScriptAlert.getJavaScriptLabelResult(), labelValue, "Label value is incorrect");
+		assertEquals(this.javaScriptAlert.getJavaScriptLabelResult(), this.labelValue, this.labelValueIsIncorrect);
 	}
 	
 	@Test(priority = 2, groups = { "ui" })
@@ -39,7 +40,7 @@ public class JavaScriptAlertTest extends BaseTest{
 		this.javaScriptAlert.triggerJavaScriptConfirmButton();
 		this.alertConfirmActualText = this.javaScriptAlert.getJavaScriptConfirmAlertResult();
 		this.javaScriptAlert.pressCancelOnJSConfirm();
-		assertEquals(this.alertConfirmActualText, alertConfirmExpectedText, "Label value is incorrect");
+		assertEquals(this.alertConfirmActualText, this.alertConfirmExpectedText, this.labelValueIsIncorrect);
 	}
 	
 	@Test(priority = 3, groups = { "ui" })
@@ -48,7 +49,7 @@ public class JavaScriptAlertTest extends BaseTest{
 		this.javaScriptAlert.triggerJavaScriptPromptButton();
 		this.javaScriptAlert.sendMessageToPromptAlert(labelPromptMessage);
 		this.javaScriptAlert.pressOkayOnJSPromptAlert();
-		assertEquals(this.javaScriptAlert.getJavaScriptLabelResult(), "You entered: " + labelPromptMessage, "Label prompt is incorrect");
+		assertEquals(this.javaScriptAlert.getJavaScriptLabelResult(), "You entered: " + this.labelPromptMessage, "Label prompt is incorrect");
 	}
 	
 }
