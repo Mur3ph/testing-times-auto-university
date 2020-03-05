@@ -16,7 +16,6 @@ public class JavaScriptAlertTest extends BaseTest{
 	private JavaScriptAlert javaScriptAlert;
 	private final String labelValue = "You successfuly clicked an alert";
 	private final String alertConfirmExpectedText = "I am a JS Confirm";
-	private String alertConfirmActualText;
 	private final String labelPromptMessage = "Prompt message";
 	private final String labelValueIsIncorrect = "Label value is incorrect";
 
@@ -38,9 +37,9 @@ public class JavaScriptAlertTest extends BaseTest{
 	public void javascriptConfrimTest() {
 		LOGGER.info("++javascriptConfrimTest()");
 		this.javaScriptAlert.triggerJavaScriptConfirmButton();
-		this.alertConfirmActualText = this.javaScriptAlert.getJavaScriptConfirmAlertResult();
+		String alertConfirmActualText = this.javaScriptAlert.getJavaScriptConfirmAlertResult();
 		this.javaScriptAlert.pressCancelOnJSConfirm();
-		assertEquals(this.alertConfirmActualText, this.alertConfirmExpectedText, this.labelValueIsIncorrect);
+		assertEquals(alertConfirmActualText, this.alertConfirmExpectedText, this.labelValueIsIncorrect);
 	}
 	
 	@Test(priority = 3, groups = { "ui" })
